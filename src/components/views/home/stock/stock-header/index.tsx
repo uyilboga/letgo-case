@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react';
+import React from 'react';
 import Button from '@/components/common/button';
 import { StockHeaderTypes } from '@/components/views/home/stock/stock-header/StockHeader.types';
 import styles from './StockHeader.module.scss';
