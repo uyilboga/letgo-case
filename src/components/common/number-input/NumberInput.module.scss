@@ -1,0 +1,13 @@
+.numberInput {
+  max-width: 60px;
+  height: 38px;
+  border-radius: 6px;
+  background: #e0e0e0;
+  padding: 0 6px 0 12px;
+  border: none;
+  font-size: 14px;
+  &:focus, &:hover {
+    outline: none;
+  }
+}
+

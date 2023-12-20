@@ -1,0 +1,17 @@
+.stockList {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  .item {
+    margin-bottom: 12px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    margin-top: 24px;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 12px;
+  }
+}

@@ -1,0 +1,41 @@
+.symbolTableItem {
+  padding: 12px 24px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  .title {
+    flex: 1;
+    .name {
+      font-size: 14px;
+      font-weight: bold;
+      margin: 0;
+    }
+    p {
+      font-size: 10px;
+      color: #828282;
+      margin: 0;
+    }
+  }
+  .buttons {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 200px;
+    button {
+      flex: 1;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap;
+    gap: 12px;
+    .title {
+      flex: 1;
+    }
+    .buttons {
+      width: 100%;
+    }
+  }
+}
