@@ -27,6 +27,8 @@ const SymbolTableItem = (props: SymbolItemTableTypes) => {
     toast.success('Symbol added to stock successfully!');
   };
   const handleUpdate = () => {
+    const stockItem = stock.find((stockItem) => stockItem.data.symbol === data.symbol);
+    if (stockItem && stockItem.quantity === quantity) return toast.error('Quantity must be different from the previous one!');
     updateSymbol(data, quantity);
     toast.success('Symbol updated successfully!');
   };
